@@ -9,15 +9,20 @@ import styles from './App.module.css';
 
 class App extends React.Component {
 
+    state = {
+        data: {},
+    }
+
     async componentDidMount(){
-        const data = await fetchData();
-        console.log(data)
+        const fetchedData = await fetchData();
+        this.setState({ data: fetchedData })
     }
 
     render() {
+        const { data } = this.state;
         return (
-            <div className={styles.container}>
-                <Cards />
+            <div className = { styles.container }>
+                <Cards data = { data } />
                 <CountryPicker />
                 <Chart />
             </div>
