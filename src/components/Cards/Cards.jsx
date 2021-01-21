@@ -8,7 +8,7 @@ import styles from './Cards.module.css';
 
 const Cards = ( { data: { confirmed, recovered, deaths, lastUpdate } } ) => {
     if(!confirmed) {
-        return 'Saglit....';
+        return 'Fetching data....';
     }
     return (
         <div className={ styles.container }>

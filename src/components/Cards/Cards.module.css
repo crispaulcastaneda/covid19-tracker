@@ -1,5 +1,6 @@
 .container {
     margin: 50px 0;
+    padding: 25px;
 }
 
 .card {
@@ -7,13 +8,13 @@
 }
 
 .infected {
-    border-bottom: 10px solid #9428205b;
+    border-bottom: 10px solid #d57361;
 }
 
 .recovered {
-    border-bottom: 10px solid #1764005b;
+    border-bottom: 10px solid #9dd866;
 }
 
 .deaths {
-    border-bottom: 10px solid #0000005b;
+    border-bottom: 10px solid #ffa056;
 }
